@@ -141,6 +141,8 @@ public:
 	iterator begin() { return iterator(&_data[0]); }
 	iterator end() { return begin() + _size; }
 
+	void clear() { _size = 0; }
+
 private:
 	T* _data;
 	int _size;
